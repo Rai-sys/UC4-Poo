@@ -1,13 +1,13 @@
 // como iniciar
 class Pessoa{
-    // nome;
+    // nome;      // <--- atributo
     // rg;
     // cpf;
     // idade;
     // sexo;
     // nacionalidade;
     // estadoCivil;
-    constructor(nome, rg, cpf, idade, sexo, nacionalidade, estadoCivil){
+    constructor(nome, rg, cpf, idade, sexo, nacionalidade, estadoCivil){    // <--- método para criação de objeto
         this.nome = nome;
         this.rg = rg;
         this.cpf = cpf;
@@ -16,8 +16,7 @@ class Pessoa{
         this.nacionalidade = nacionalidade;
         this.estadoCivil = estadoCivil;
     }
-//  metodos para acessar atributos
-    getNome() {
+    getNome() {            // <---  metodos para acessar atributos  /  manipula objeto
         return this.nome;
     }
     getRg() {
@@ -38,8 +37,7 @@ class Pessoa{
     getEstadoCivil() {
         return this.estadoCivil;
     }
-//  atualiza
-    setNome(nome) {
+    setNome(nome) {          //  <---    altera   /   manipula objeto
         this.nome = nome;
     }
     exibirDados() {
